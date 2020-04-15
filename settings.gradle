@@ -1,0 +1,5 @@
+rootProject.name='MultitableModuleApp'
+include ':app'
+include ':feature1'
+include ':feature2'
+include ':lib'
