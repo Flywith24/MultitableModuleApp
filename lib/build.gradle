@@ -34,4 +34,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    def koin_version = "2.1.5"
+    api "org.koin:koin-android:$koin_version"
+    api "org.koin:koin-androidx-scope:$koin_version"
+
 }

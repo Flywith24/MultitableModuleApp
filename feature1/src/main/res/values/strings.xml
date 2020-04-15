@@ -1,1 +1,4 @@
-<resources></resources>
+<resources>
+    <string name="feature1_plugin">Feature1-plugin</string>
+    <string name="feature1_koin">Feature1-koin</string>
+</resources>

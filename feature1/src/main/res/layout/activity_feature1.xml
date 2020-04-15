@@ -7,12 +7,27 @@
     tools:context=".Feature1Activity">
 
     <Button
+        android:id="@+id/plugin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="click"
-        android:text="Feature1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="pluginClick"
+        android:text="@string/feature1_plugin"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/okin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/okin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="koinClick"
+        android:text="@string/feature1_koin"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plugin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
