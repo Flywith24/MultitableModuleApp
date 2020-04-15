@@ -18,7 +18,6 @@ import org.koin.dsl.module
 class MyApplication : Application() {
     val myModule = module {
         single { Feature2Activity::class.java.name }
-        scope<Feature1Activity> { scope<String> { Feature2Activity::class.java.name } }
     }
 
     override fun onCreate() {
