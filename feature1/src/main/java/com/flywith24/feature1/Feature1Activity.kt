@@ -9,6 +9,9 @@ import com.gaelmarhic.quadrant.QuadrantConstants
 class Feature1Activity : AppCompatActivity(R.layout.activity_feature1) {
 
     fun click(view: View) {
-        startActivity(Intent().setClassName(this, QuadrantConstants.FEATURE2_ACTIVITY))
+        startActivity(Intent().apply {
+            setClassName(this@Feature1Activity, QuadrantConstants.FEATURE2_ACTIVITY)
+                .putExtra("key", "value")
+        })
     }
 }
